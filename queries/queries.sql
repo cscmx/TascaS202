@@ -30,7 +30,7 @@ SELECT nombre, UPPER(LEFT(nombre,2)) as iniciales
 FROM fabricante;
 
 -- 9. Llista els noms i els preus dels productes, arrodonint el valor del preu (precio)
-SELECT nombre, CEIL(precio * 100) / 100 AS precio
+SELECT nombre, ROUND(precio)
 FROM producto;
 
 -- 10. Llista els noms i els preus de tots els productes (precio truncado) de la taula producto, truncant el valor del preu per a mostrar-lo sense cap xifra decimal.
